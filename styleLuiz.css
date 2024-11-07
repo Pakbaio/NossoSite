@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root {
+    font-family: 'Poppins', serif;
+
+    --background-color: #111111;
+    --div-background-color: #181818;
+    --div-border-color: #740000;
+    --div-border-light: red;
+    --red-color-text: #fd2020;
+}
+
+body {
+    background: rgba(0,0,0,0.7)url('UsBackground.png');
+    background-blend-mode: darken;
+    background-size: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 2px 24px;
+
+    background: #181818;
+    border: 1px solid var(--border-color);
+    box-shadow: 1px 1px 12px var(--div-border-light);
+
+    i{
+        font-size: 24px;
+        color: red;
+        padding: 24px;
+    }
+
+    i:hover{
+        font-size: 30px;
+        padding: 21px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    a h1{
+        font-size: 24px;
+        text-align: center;
+        width: 240px;
+        font-weight: 700;
+        color: var(--red-color-text);
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 48px 24px;
+    margin: 24px 15vw;
+    gap: 16px;
+
+    backdrop-filter: blur(50px);
+    background: linear-gradient(100 white 1 white);
+    
+    border-radius: 50px;
+    border: 1px solid var(--div-border-color);
+    /*filter: drop-shadow(1px 1px 10px var(--div-border-light));*/
+    box-shadow: 1px 1px 12px #141414;
+
+    h1 {
+        color: #ffe4e4;
+        font-weight: 700;
+        font-size: 24px;
+        width: 300px;
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: 100;
+        color: #bdbdbd;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 19px;
+        font-weight: 100;
+        text-align: center;
+        
+        width: 93%;
+        flex-wrap: wrap;
+        color: rgb(221, 221, 221);
+
+        b{
+            color: rgb(209, 55, 55);
+            font-weight: 700;
+        }
+    }
+}
